@@ -17,6 +17,7 @@ public class KisoKadai1 {
             String bbb = br.readLine();
             y = Integer.parseInt(bbb);
             }catch(Exception e){
+            	System.out.print("文字ではなく");
             x = 0;
             }
         if((0 < (x | y)) & ((x | y) <= 100)){
@@ -29,7 +30,7 @@ public class KisoKadai1 {
         		System.out.println("");
         	}
         }else{
-        	System.out.println("xとｙは100以下にしてください。");
+        	System.out.println("xとｙは100以下の数値にして下さい。");
     	}
 	}
 	
