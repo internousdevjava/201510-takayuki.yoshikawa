@@ -29,13 +29,13 @@ public class Kisokadai3
 					File file = new File(sakusei); //ファイルの存在チェック、作成用
 					File dir = new File(file.getParent()); //ディレクトリの存在チェック、作成用
 					if(dir.exists()){ //ディレクトリが存在しているかチェック
-						System.out.println("ディレクトリが存在します、Menuに戻ります。");
+						System.out.println("ディレクトリが存在します");
 					}else{
 						System.out.println("新しくディレクトリを作成します");
 						dir.mkdir(); // ディレクトリ作成
 					}
 					if(file.exists()){ //ファイルが存在しているかチェック
-						System.out.println("ファイルが存在します、Menuに戻ります。");
+						System.out.println("ファイルが存在します。");
 					}else{
 						System.out.println("新しくファイルを作成します");
 						try{
@@ -76,6 +76,11 @@ public class Kisokadai3
 				try{
 					kakikomi=br.readLine();
 				}catch(Exception e){
+				}
+				File checkfile = new File(kakikomi);
+				if(!checkfile.exists()){
+					System.out.println("そのファイルは存在しません。");
+					continue;
 				}
 				while(j != 3){
 					try{
