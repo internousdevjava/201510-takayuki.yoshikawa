@@ -1,14 +1,15 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+//æ–‡å­—åŒ–ã‘ä¿®æ­£ã—ã¾ã—ãŸã€‚
 public class KisoKadai1 {
 	public static void main(String[] args) {
 		int x=0;
 		int y=0;
-        System.out.println("x‚Æy‚ğ“ü—Í‚µ‚Ä‰º‚³‚¢B: ");
+        System.out.println("xã¨yã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„ã€‚: ");
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         try{
-        	System.out.println("0ˆÈã100ˆÈ‰º‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        	System.out.println("0ä»¥ä¸Š100ä»¥ä¸‹ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         	System.out.print("x=");
             String aaa = br.readLine();
             x = Integer.parseInt(aaa);
@@ -19,7 +20,7 @@ public class KisoKadai1 {
             x = 0;
             }
         if((0 < (x | y)) & ((x | y) <= 100)){
-        	//‹ã‹ã
+        	//ä¹ä¹
         	for(int j=y;j>=1;j--){
         		for(int k=1;k<=x;k++){
     			//System.out.print((j*k)+ " ");
@@ -28,18 +29,18 @@ public class KisoKadai1 {
         		System.out.println("");
         	}
         }else{
-        	System.out.println("x‚Æ‚™‚Í100ˆÈ‰º‚É‚µ‚Ä‚­‚¾‚³‚¢B");
+        	System.out.println("xã¨ï½™ã¯100ä»¥ä¸‹ã«ã—ã¦ãã ã•ã„ã€‚");
     	}
 	}
 	
-	//Œ©‚½–Ú‚ğ®‚¦‚é‚½‚ß‚Ì‹ó”’‚ğì‚Á‚Ä‚¢‚é}
+	//è¦‹ãŸç›®ã‚’æ•´ãˆã‚‹ãŸã‚ã®ç©ºç™½ã‚’ä½œã£ã¦ã„ã‚‹}
 	static void yohaku(int k){
 		int leng = String.valueOf(k).length();
 		switch(leng){
-		case 1:System.out.print("    " + k + " "); break; //1Œ…‚Ì‚Æ‚«
-		case 2:System.out.print("   " + k + " "); break;  //2Œ…‚Ì‚Æ‚«
-		case 3:System.out.print("  " + k + " "); break;   //3Œ…‚Ì‚Æ‚«
-		case 4:System.out.print(" "+k + " ");break;         //4Œ…‚Ì‚Æ‚«
+		case 1:System.out.print("    " + k + " "); break; //1æ¡ã®ã¨ã
+		case 2:System.out.print("   " + k + " "); break;  //2æ¡ã®ã¨ã
+		case 3:System.out.print("  " + k + " "); break;   //3æ¡ã®ã¨ã
+		case 4:System.out.print(" "+k + " ");break;         //4æ¡ã®ã¨ã
 	    case 5:System.out.print(k + " ");break;}
 	}
 }

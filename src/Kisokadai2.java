@@ -1,33 +1,33 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+//æ–‡å­—åŒ–ã‘ä¿®æ­£ã—ã¾ã—ãŸã€‚
 public class Kisokadai2 {
 
 	public static void main(String[] args) {
 		int x=0;
-		System.out.println("HIGH•LOW!!1~100‚Ü‚Å‚Ì”š‚ğ“ü‚ê‚Ä‚­‚¾‚³‚¢B");
+		System.out.println("HIGHï¼†LOW!!1~100ã¾ã§ã®æ•°å­—ã‚’å…¥ã‚Œã¦ãã ã•ã„ã€‚");
 		InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         int i = (int)(Math.random() * 100);
         
        while( i!= x ){ 
         try{
-        	System.out.print("‚ ‚È‚½‚Ì”š‚Í");
+        	System.out.print("ã‚ãªãŸã®æ•°å­—ã¯");
             String suuji = br.readLine();
             x = Integer.parseInt(suuji);
         }catch(Exception e){
             x = 0;
         }
         if(x<1|x>100){
-        	System.out.println("1~100‚Ì”š‚É‚µ‚Ä‚­‚¾‚³‚¢B");
+        	System.out.println("1~100ã®æ•°å­—ã«ã—ã¦ãã ã•ã„ã€‚");
         }else if( i < x){
-        System.out.println("High!!“š‚¦‚Í‚à‚Á‚Æ’á‚¢‚æ!!");
+        System.out.println("High!!ç­”ãˆã¯ã‚‚ã£ã¨ä½ã„ã‚ˆ!!");
         
         }else if( i > x){
         	
-        System.out.println("Low!!“š‚¦‚Í‚à‚Á‚Æ‚‚¢‚æ!!");
+        System.out.println("Low!!ç­”ãˆã¯ã‚‚ã£ã¨é«˜ã„ã‚ˆ!!");
         }
 	}
-       System.out.println("“–‚½‚è‚Å‚·!!");
+       System.out.println("å½“ãŸã‚Šã§ã™!!");
 	}
 }
